@@ -7,5 +7,10 @@
   "dependencies": {},
   "devDependencies": {
     "lerna": "^7.1.4"
+  },
+  "scripts": {
+    "run:fe": "lerna run --scope=react-frontend start",
+    "run:be": "lerna run --scope=express-backend start",
+    "run:both": "lerna run --parallel start"
   }
 }
